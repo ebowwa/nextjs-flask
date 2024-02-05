@@ -8,7 +8,7 @@ import { UploadCloudIcon } from 'lucide-react';
 import DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { HamburgerMenuIcon, CheckIcon, DotFilledIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 import Logo from '@/components/logo'; // Import the Logo component
-import DropdownMenuDemo from '@/components/dropdown_menu';
+import SiteDirectoryMenu from '@/components/dropdown_menu';
 
 function Component() {
   const [file, setFile] = useState(null);
@@ -84,7 +84,7 @@ const UploadPage = () => {
       {/* Dropdown Menu positioned at the top right corner */}
       <div className="absolute top-0 right-0 mt-4 mr-4">
         {/* Ensure DropdownMenuDemo is a functional component that returns valid JSX */}
-        <DropdownMenuDemo />
+        <SiteDirectoryMenu />
       </div>
 
       {/* Main content centering the component */}
