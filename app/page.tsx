@@ -5,12 +5,10 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { UploadCloudIcon } from 'lucide-react';
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { HamburgerMenuIcon, CheckIcon, DotFilledIcon, ChevronRightIcon } from '@radix-ui/react-icons';
-
-const DropdownMenuDemo = () => {
-  // Dropdown menu state and logic here (same as your provided dropdown menu code)
-};
+import Logo from '@/components/logo'; // Import the Logo component
+import DropdownMenuDemo from '@/components/dropdown_menu';
 
 function Component() {
   const [file, setFile] = useState(null);
@@ -77,27 +75,24 @@ function Component() {
   );
 }
 
-// Modified uploadPage component with title in the top left corner and dropdown menu in the top right corner
+// Modified uploadPage component to use the Logo component
 const UploadPage = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      {/* Title Section in the top left corner */}
-      <div className="absolute top-0 left-0 mt-4 ml-4">
-        <h1 className="text-xl font-bold">voiceovers</h1>
-      </div>
-      
+      {/* Replace Title Section with Logo component */}
+      <Logo />
       {/* Dropdown Menu positioned at the top right corner */}
       <div className="absolute top-0 right-0 mt-4 mr-4">
+        {/* Ensure DropdownMenuDemo is a functional component that returns valid JSX */}
         <DropdownMenuDemo />
       </div>
 
-      {/* Main content centering the component (assuming Component is defined/imported) */}
+      {/* Main content centering the component */}
       <div className="flex justify-center items-center flex-grow">
-        <Component /> {/* Replace Component with your actual component */}
+        <Component />
       </div>
     </div>
   );
 };
-
 
 export default UploadPage;

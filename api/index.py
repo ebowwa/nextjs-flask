@@ -44,7 +44,7 @@ def upload_file():
         processor = VideoSpeechProcessor(
             video_file_path=file_path,
             target_frame_rate=30,  # Example value
-            prompt_path = 'prompts/narrations/tik5.md',
+            prompt_path = 'api/_backend/prompts/narrations/tik5.md',
             project_uuid = '0448305f',
             voice_uuid = 'd3e61caf'
         )
@@ -70,6 +70,11 @@ def upload_file():
         })
 
     return jsonify({'error': 'File extension not allowed'}), 400
+
+@app.route('/videos/<filename>')
+def uploaded_file(filename):
+    return send_from_directory(app.config['OUTPUT_FOLDER'], filename)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

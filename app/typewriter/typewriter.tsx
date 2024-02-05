@@ -46,3 +46,4 @@ export const useTypewriterEffect = (roles: string[], typingSpeed = 200, deleting
 
   return dynamicText;
 };
+// curl -X POST -F "file=@api/_backend/public/wrestling.mp4" http://127.0.0.1:5328/api/upload
