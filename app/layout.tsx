@@ -1,7 +1,9 @@
+// Importing necessary components and hooks
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Toaster } from "@/components/ui/toaster"; // Import the Toaster component
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] }) // Loading the Inter font with 'latin' subset
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main>{children}</main> {/* Main content area where child components will be rendered */}
+        <Toaster /> {/* Placement of the Toaster component */}
+      </body>
     </html>
   )
 }
