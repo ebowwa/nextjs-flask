@@ -1,11 +1,7 @@
-<p align="center">
-  <a href="https://nextjs-flask-starter.vercel.app/">
-    <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" height="96">
-    <h3 align="center">Next.js Flask Starter</h3>
-  </a>
-</p>
+![logo](https://github.com/ebowwa/nextjs-flask/assets/81942069/8fb5de0b-10b3-4aa6-b388-8c29df87b547)
 
-<p align="center">Simple Next.js boilerplate that uses <a href="https://flask.palletsprojects.com/">Flask</a> as the API backend.</p>
+
+<p align="center">voiceover shorts, a new way to embrace your content<a href="https://flask.palletsprojects.com/"></p>
 
 <br/>
 
