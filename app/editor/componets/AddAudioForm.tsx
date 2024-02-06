@@ -1,4 +1,7 @@
-// app/audioLibrary/components/AddAudioForm.tsx
+// app/editor/components/AddAudioForm.tsx
+// lets rename CharaterPromptForm.tsx lets also allow signed on users the ability to save and add new prompts
+// when the user clicks the prompt title on left of the webpage under the character library an overlay over the Audio Transcriptions should be the prompts 
+
 "use client";
 import { useState } from 'react';
 import { Input } from "@/components/ui/input";

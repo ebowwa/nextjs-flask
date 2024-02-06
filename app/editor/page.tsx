@@ -7,6 +7,7 @@ import AudioTranscriptionList from './componets/AudioTranscriptionList';
 import AddAudioForm from './componets/AddAudioForm';
 import Logo from '@/components/logo'; // Assuming you're still using the Logo component
 import { Button } from "@/components/ui/button"; // Import the Button component
+import SiteDirectoryMenu from '@/components/dropdown_menu'; // Assuming SiteDirectoryMenu is a default export
 
 const EditorPage: NextPage = () => {
   return (
