@@ -46,8 +46,7 @@ const SiteDirectoryMenu = () => {
             </DropdownMenu.SubContent>
           </DropdownMenu.Sub>
 
-          <Link href="/signin" passHref><DropdownMenu.Item className="dropdown-item">Login</DropdownMenu.Item></Link>
-          <Link href="/signup" passHref><DropdownMenu.Item className="dropdown-item">Sign Up</DropdownMenu.Item></Link>
+          <Link href="/login" passHref><DropdownMenu.Item className="dropdown-item">Login</DropdownMenu.Item></Link>
           <Link href="/share" passHref><DropdownMenu.Item className="dropdown-item">Share</DropdownMenu.Item></Link>
           <Link href="/affiliate-program" passHref><DropdownMenu.Item className="dropdown-item">Affiliate Program</DropdownMenu.Item></Link>
         </DropdownMenu.Content>
@@ -57,3 +56,4 @@ const SiteDirectoryMenu = () => {
 };
 
 export default SiteDirectoryMenu;
+//           <Link href="/signup" passHref><DropdownMenu.Item className="dropdown-item">Sign Up</DropdownMenu.Item></Link>

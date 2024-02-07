@@ -2,9 +2,9 @@
 "use client";
 
 import { NextPage } from 'next';
-import AudioTrackList from './componets/AudioTrackList';
-import AudioTranscriptionList from './componets/AudioTranscriptionList';
-import AddAudioForm from './componets/AddAudioForm';
+import AudioTrackList from './componets/ChracterList';
+import AudioTranscriptionList from './componets/voiceoverTranscriptionList';
+import AddAudioForm from './componets/CharacterPromptForm';
 import Logo from '@/components/logo'; // Assuming you're still using the Logo component
 import { Button } from "@/components/ui/button"; // Import the Button component
 import SiteDirectoryMenu from '@/components/dropdown_menu'; // Assuming SiteDirectoryMenu is a default export
